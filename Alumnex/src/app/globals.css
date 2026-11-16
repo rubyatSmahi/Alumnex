@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+.page-shell {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  padding: 4rem 1.5rem;
+  background: #070606;
+}
+
+.content-panel {
+  max-width: 880px;
+  width: min(100%, 880px);
+  background: #111010;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  padding: 3rem 2.5rem;
+}
+
+.content-panel .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #c6a36a;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.content-panel h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  margin-bottom: 1.25rem;
+}
+
+.content-panel .lead {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 53rem;
+  color: #bdbdbd;
+  margin-bottom: 2rem;
+}
+
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primary-link,
+.secondary-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6.25rem;
+  padding: 0.9rem 1.4rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.primary-link {
+  background: #fff;
+  color: #070606;
+}
+
+.secondary-link {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+  background: transparent;
+}
+
+.primary-link:hover,
+.secondary-link:hover {
+  transform: translateY(-1px);
+}
+
+.dashboard-shell {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  min-height: 100vh;
+  background: #070606;
+}
+
+.dashboard-sidebar {
+  background: #101010;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem 1.25rem;
+}
+
+.brand-block {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.dashboard-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.side-link {
+  border-radius: 12px;
+  color: #bdbdbd;
+  padding: 0.8rem 0.9rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.side-link:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+}
+
+.dashboard-content {
+  padding: 2rem 2rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .content-panel {
+    padding: 2rem 1.2rem;
+  }
+
+  .action-row {
+    flex-direction: column;
+  }
+}
