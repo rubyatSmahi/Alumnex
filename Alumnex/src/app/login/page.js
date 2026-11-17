@@ -1,15 +1,5 @@
+import { LoginPage } from '@/components/auth/AuthPages';
+
 export default function Page() {
-  return (
-    <main className="page-shell">
-      <section className="content-panel">
-        <p className="eyebrow">Alumnex</p>
-        <h1>Login</h1>
-        <p className="lead">Welcome back to Alumnex. Access your profile, messages, opportunities, and community updates.</p>
-        <div className="action-row">
-          <a href="/" className="primary-link">Back home</a>
-          <a href="/contact" className="secondary-link">Talk to the team</a>
-        </div>
-      </section>
-    </main>
-  );
+  return <LoginPage />;
 }

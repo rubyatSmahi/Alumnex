@@ -1,4 +1,6 @@
 import Layout from '@/components/layout/PublicLayout';
+import '@/components/auth/auth.css';
+import '@/components/dashboard/dashboard.css';
 import './globals.css';
 
 export const metadata = {
