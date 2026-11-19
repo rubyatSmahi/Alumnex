@@ -14,13 +14,14 @@ export const Inner = styled.div `
 
   h1 {
     max-width: 56rem;
-    font-size: 6rem;
+    font-size: clamp(2.25rem, 5.5vw, 6rem);
     font-weight: 400;
   }
 
   @media (max-width: 768px) {
+    gap: 3.5rem;
     h1 {
-      font-size: 3.75rem;
+      font-size: clamp(2.25rem, 7vw, 3.75rem);
     }
   }
 `;

@@ -1,44 +1,41 @@
 // For desktop
 export const desktopHeaderPhrase = ['Your Alumni Network,', 'Your Next Step'];
 export const desktopParagraphPhrase = [
-    'Find the right guidance, connections, and opportunities to move your career forward.',
-    'Your university community is here to support the next step.',
+    'Reconnect with the people and shared experiences that make your alumni network valuable.',
+    'Find your place in a university community that grows with you.',
 ];
 export const desktopBriefNotePhrase = [
-    'Mentorship,',
-    'career guidance, and',
-    'community connections,',
-    'all in one place.',
+    'Reconnect with classmates,',
+    'discover shared experiences,',
+    'and keep your university',
+    'community close.',
 ];
 // For mobile
 export const mobileHeaderPhrase = ['Your Alumni Network,', 'Your Next Step'];
 export const mobileParagraphPhrase = [
-    'Find guidance, connections, and opportunities',
-    'to move your career forward with the support',
-    'of your university community.',
+    'Reconnect with the people and shared experiences',
+    'that make your alumni network valuable,',
+    'wherever life takes you.',
 ];
 export const mobileBriefNotePhrase = [
-    'Mentorship,',
-    ' career',
-    ' guidance,',
-    ' and lasting',
-    ' community',
-    ' connections.',
+    'Reconnect with classmates,',
+    'discover shared experiences,',
+    'and keep your university community close.',
 ];
 export const edges = [
     {
-        point: 'Career Mentorship',
-        details: 'Get guidance from graduates who have experience in your areas of interest.',
-        icon: 'mentorship',
-    },
-    {
-        point: 'Verified Alumni',
-        details: 'Explore professional profiles and connect with members of your university community.',
-        icon: 'profile',
-    },
-    {
-        point: 'Real Opportunities',
-        details: 'Discover jobs, internships, and events shared across the alumni network.',
+        point: 'Alumni Businesses',
+        details: 'Discover businesses, services, and ventures founded or run by fellow alumni.',
         icon: 'career',
+    },
+    {
+        point: 'Research & Innovation',
+        details: 'Explore alumni research, creative projects, and innovative ideas making an impact.',
+        icon: 'academic',
+    },
+    {
+        point: 'Giving Back',
+        details: 'Support university initiatives, contribute your expertise, and create opportunities for future graduates.',
+        icon: 'achievement',
     },
 ];

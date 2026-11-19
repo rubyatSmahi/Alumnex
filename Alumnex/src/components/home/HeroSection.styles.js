@@ -9,6 +9,7 @@ export const Inner = styled.div `
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
   max-width: 56rem;
   margin: 0 auto;
   text-align: center;
@@ -22,7 +23,7 @@ export const HeroTextContainer = styled.div `
   padding-bottom: 2rem;
 
   h1 {
-    font-size: 6rem;
+    font-size: clamp(2.5rem, 6vw, 6rem);
     font-weight: 400;
   }
 

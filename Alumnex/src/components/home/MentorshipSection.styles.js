@@ -41,6 +41,14 @@ export const Header = styled.header `
     line-height: 1.75rem;
   }
 
+  @media (max-width: 1024px) {
+    margin-bottom: 5rem;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
   @media (max-width: 768px) {
     margin-bottom: 5rem;
 
@@ -58,7 +66,6 @@ export const BannerCtn = styled.div `
   margin-bottom: 5rem;
   width: 100%;
   position: relative;
-  width: 100%;
   height: 38.4375rem;
   overflow: hidden;
   border-radius: 0.75rem;
@@ -66,6 +73,11 @@ export const BannerCtn = styled.div `
   img {
     border-radius: 0.75rem;
     object-fit: cover;
+  }
+
+  @media (max-width: 1024px) {
+    height: 30rem;
+    margin-bottom: 3.5rem;
   }
 
   @media (max-width: 768px) {
@@ -106,19 +118,18 @@ export const Title = styled.div `
   }
 `;
 export const BriefNote = styled.div `
-  max-height: 54.75rem;
   padding: 8.25rem 4.5rem;
   background: var(--burgundy);
 
   p {
     color: var(--white);
-    font-size: 8rem;
+    font-size: clamp(3.5rem, 6.5vw, 8rem);
     font-weight: 400;
     max-width: 1440px;
+    line-height: 1.1;
   }
 
   @media (max-width: 1024px) {
-    max-height: none;
     padding: 4rem 3rem;
 
     p {
@@ -129,6 +140,7 @@ export const BriefNote = styled.div `
 
   @media (max-width: 768px) {
     padding: 2rem 1.5rem;
+
     p {
       font-size: clamp(2.5rem, 7vw, 4.5rem);
       line-height: 1.1;

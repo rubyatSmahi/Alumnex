@@ -44,7 +44,17 @@ export const Header = styled.header `
     line-height: 1.75rem;
   }
 
+  @media (max-width: 1024px) {
+    margin-bottom: 4.5rem;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
   @media (max-width: 768px) {
+    margin-bottom: 3.5rem;
+
     h1 {
       font-size: 2.25rem;
     }

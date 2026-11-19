@@ -2,6 +2,10 @@
 import { styled } from 'styled-components';
 export const Wrapper = styled.section `
   padding-top: 7.75rem;
+
+  @media (max-width: 768px) {
+    padding-top: 5rem;
+  }
 `;
 export const Inner = styled.div `
   width: 90%;
@@ -28,7 +32,17 @@ export const Header = styled.header `
     line-height: 1.75rem;
   }
 
+  @media (max-width: 1024px) {
+    margin-bottom: 4.5rem;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
   @media (max-width: 768px) {
+    margin-bottom: 3.5rem;
+
     h1 {
       font-size: 2.25rem;
     }
@@ -190,10 +204,18 @@ export const Banner = styled.div `
     object-fit: cover;
   }
 
+  @media (max-width: 1024px) {
+    height: 35rem;
+  }
+
   @media (max-width: 768px) {
     height: 31.25rem;
     img {
       object-fit: cover;
     }
+  }
+
+  @media (max-width: 480px) {
+    height: 22rem;
   }
 `;
