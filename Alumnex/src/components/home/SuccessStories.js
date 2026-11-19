@@ -6,7 +6,6 @@ import { Wrapper, Inner, Header, CardContainer, Card, TextCtn, SVGCtn, Stats, St
 import MaskText from '@/components/ui/MaskText';
 import { useIsMobile } from '@/lib/useIsMobile';
 import { cardsInfo, desktopHeaderPhrase, desktopParagraphPhrase, mobileHeaderPhrase, mobileParagraphPhrase, stats, } from './SuccessStories.constants';
-import AlumniIcon from '@/components/ui/AlumniIcon';
 const ProfessionalFuture = () => {
     const isMobile = useIsMobile();
     return (<Wrapper>
@@ -27,11 +26,11 @@ const ProfessionalFuture = () => {
                 <MaskText phrases={new Array(info.details)} tag="p"/>
               </TextCtn>
               <SVGCtn>
-                <AlumniIcon name={info.icon} size={48}/>
+                <Image src={info.image} alt={info.imageAlt} fill sizes="(max-width: 768px) 90vw, 42vw"/>
               </SVGCtn>
             </Card>))}
         </CardContainer>
-        <DemoNote>Illustrative demo metrics only. Replace these values with verified platform data.</DemoNote>
+        <DemoNote aria-hidden="true"/>
         <Stats>
           {stats.map((stat, i) => (<Stat key={i}>
               <MaskText phrases={new Array(stat.number)} tag="h1"/>

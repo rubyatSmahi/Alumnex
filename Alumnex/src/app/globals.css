@@ -1,5 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
+.landing-page [id] {
+  scroll-margin-top: 6rem;
+}
+
 .page-shell {
   min-height: 60vh;
   display: grid;

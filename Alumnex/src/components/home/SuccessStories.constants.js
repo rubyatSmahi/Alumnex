@@ -1,13 +1,18 @@
+import connectFurtherImage from '../../../public/images/connect_further.jpg';
+import growTogetherImage from '../../../public/images/grow_together.jpg';
+
 export const cardsInfo = [
     {
         title: 'Connect Further',
         details: 'Build lasting connections with alumni who share your background, interests, and ambitions.',
-        icon: 'community',
+        image: connectFurtherImage,
+        imageAlt: 'Alumni connecting in a university library',
     },
     {
         title: 'Grow Together',
         details: 'Find guidance, career opportunities, and community support at every stage of your journey.',
-        icon: 'achievement',
+        image: growTogetherImage,
+        imageAlt: 'Colleagues and mentors collaborating at work',
     },
 ];
 export const stats = [

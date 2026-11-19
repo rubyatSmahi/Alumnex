@@ -24,7 +24,7 @@ const JoinSection = () => {
     const mappedTestimonials = isMobile
         ? testimonialsArr.slice(0, 1)
         : testimonialsArr.slice(0, 3);
-    return (<Wrapper>
+    return (<Wrapper id="stories">
       <Inner>
         <Header>
           <MaskText phrases={desktopHeaderPhrase} tag="h1"/>

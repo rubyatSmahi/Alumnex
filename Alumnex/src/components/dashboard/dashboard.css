@@ -273,7 +273,7 @@ body:has(.dashboard-shell) {
   justify-content: space-between;
   min-height: 66px;
   padding: 0 38px;
-  border-bottom: 1px solid #ebe7e2;
+  border-bottom: 1px solid var(--navbar-underline);
   background: rgba(250,249,247,.94);
   backdrop-filter: blur(12px);
 }

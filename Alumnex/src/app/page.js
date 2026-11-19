@@ -7,7 +7,7 @@ import JoinCommunitySection from '@/components/home/JoinCommunitySection';
 import MentorshipSection from '@/components/home/MentorshipSection';
 import SuccessStories from '@/components/home/SuccessStories';
 export default function Home() {
-    return (<main>
+    return (<main className="landing-page">
       <HeroSection />
       <AlumniShowcase />
       <CareerOpportunities />

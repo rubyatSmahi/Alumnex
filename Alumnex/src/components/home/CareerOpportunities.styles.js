@@ -44,16 +44,17 @@ export const Header = styled.header `
   }
 `;
 export const ImageCtn = styled.div `
-  margin: 3rem auto 0;
   position: relative;
-  display: grid;
-  place-items: center;
+  overflow: hidden;
   flex: 1;
   color: #c9a16b;
 
+  img {
+    object-fit: cover;
+  }
+
   @media (max-width: 768px) {
-    margin: 0.32rem auto 0;
-    min-height: 10rem;
+    min-height: 0;
   }
 `;
 export const TextCtn = styled.div `
@@ -86,73 +87,20 @@ export const TextCtn = styled.div `
   }
 `;
 export const Offers = styled.div `
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
 
   &:last-child {
     margin-top: 2rem;
-
-    div:first-child {
-      flex: 1;
-
-      ${ImageCtn} {
-        margin-top: 5.7rem;
-        flex: 2;
-      }
-
-      ${TextCtn} {
-        height: 1em;
-        flex: 1;
-      }
-    }
-
-    div:last-child {
-      flex: 2;
-
-      ${ImageCtn} {
-        margin-top: 5.7rem;
-        flex: 2;
-        margin-left: auto;
-      }
-
-      ${TextCtn} {
-        height: 1em;
-        flex: 1;
-      }
-    }
+    grid-template-columns: 1fr 2fr;
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
 
     &:last-child {
-      div:first-child {
-        flex: 1;
-
-        ${ImageCtn} {
-          margin-top: 4.78rem;
-          flex: 1;
-        }
-
-        ${TextCtn} {
-          margin-top: 4rem;
-        }
-      }
-
-      div:last-child {
-        flex: 1;
-
-        ${ImageCtn} {
-          margin-top: 5.7rem;
-          flex: 1;
-          margin-left: auto;
-        }
-
-        ${TextCtn} {
-          margin-top: 2rem;
-        }
-      }
+      grid-template-columns: 1fr;
     }
   }
 `;
@@ -166,16 +114,4 @@ export const OfferCard = styled.div `
   background: #131313;
   border-color: rgba(201, 161, 107, 0.16);
 
-  &:first-child {
-    flex: 2;
-  }
-
-  &:nth-child(2) {
-    flex: 1;
-
-    ${ImageCtn} {
-      margin-left: 2.5rem;
-      width: 100%;
-    }
-  }
 `;

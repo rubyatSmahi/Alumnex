@@ -10,6 +10,7 @@ export const GlobalStyles = styled.createGlobalStyle `
     --emerald: #c9a16b;
     --burgundy: #390711;
     --gold: #c9a16b;
+    --navbar-underline: rgba(201, 164, 92, .55);
   }
 
   * {

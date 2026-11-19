@@ -94,6 +94,8 @@ export const TextCtn = styled.div `
   }
 `;
 export const SVGCtn = styled.div `
+  position: relative;
+  overflow: hidden;
   background: #101010;
   height: 24.55rem;
   display: grid;
@@ -101,15 +103,14 @@ export const SVGCtn = styled.div `
   color: #c9a16b;
   border-top: 1px solid rgba(201, 161, 107, 0.16);
 
+  img {
+    object-fit: cover;
+  }
+
   @media (max-width: 768px) {
     height: 15.28219rem;
     background-position: center center;
     background-size: contain;
-
-    img {
-      width: 7.5rem;
-      height: 7.5rem;
-    }
   }
 `;
 export const DemoNote = styled.p `
@@ -117,6 +118,7 @@ export const DemoNote = styled.p `
   font-size: 0.875rem;
   text-align: center;
   margin: 0 auto -3rem;
+  min-height: 1em;
 `;
 export const Stats = styled.div `
   margin: 6.25rem auto;

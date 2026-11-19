@@ -6,8 +6,7 @@ import RevealCover from '@/components/ui/RevealCover';
 import { Div } from './AlumniShowcase.styles';
 import { imageVariants } from './AlumniShowcase';
 import { useIsMobile } from '@/lib/useIsMobile';
-import mentorship_desktop from '../../../public/images/Big_Alumni.jpg';
-import mentorship_mobile from '../../../public/images/Small_Alumni.jpg';
+import mentorship_image from '../../../public/images/mentorship.jpg';
 import AlumniIcon from '@/components/ui/AlumniIcon';
 import { desktopBriefNotePhrase, desktopHeaderPhrase, desktopParagraphPhrase, edges, mobileBriefNotePhrase, mobileHeaderPhrase, mobileParagraphPhrase, } from './MentorshipSection.constants';
 const MentorshipSection = () => {
@@ -26,7 +25,7 @@ const MentorshipSection = () => {
         <BannerCtn>
           <RevealCover />
           <Div variants={imageVariants} initial="hidden" whileInView="visible" viewport={{ amount: 0.25, once: true }}>
-            {isMobile ? (<Image src={mentorship_mobile} alt="Alumni networking in a professional community" fill sizes="90vw"/>) : (<Image src={mentorship_desktop} alt="Alumni networking in a professional community" fill sizes="90vw"/>)}
+            <Image src={mentorship_image} alt="An alumna greeting a colleague" fill sizes="(max-width: 768px) 90vw, 85vw"/>
           </Div>
         </BannerCtn>
         <Edges>

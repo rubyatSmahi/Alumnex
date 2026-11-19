@@ -21,7 +21,7 @@ export const imageVariants = {
 };
 const Featured = () => {
     const isMobile = useIsMobile();
-    return (<Wrapper>
+    return (<Wrapper id="directory">
       <Inner>
         <ImageContainer>
           <RevealCover />

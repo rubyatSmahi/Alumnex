@@ -21,19 +21,19 @@ export const menu = {
 };
 export const links = [
     {
-        url: '/about',
+        url: '/#about',
         linkTo: 'About',
     },
     {
-        url: '/alumni-directory',
+        url: '/#directory',
         linkTo: 'Directory',
     },
     {
-        url: '/success-stories',
+        url: '/#stories',
         linkTo: 'Stories',
     },
     {
-        url: '/events',
+        url: '/#events',
         linkTo: 'Events',
     },
 ];

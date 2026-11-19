@@ -20,7 +20,7 @@ const IntroSection = () => {
     const isMobile = useIsMobile();
 
     return (
-        <Wrapper>
+        <Wrapper id="about">
             <Inner>
                 <Header>
                     <h3>Introducing</h3>
