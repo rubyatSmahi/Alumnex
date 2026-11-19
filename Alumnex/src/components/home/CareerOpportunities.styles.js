@@ -96,7 +96,7 @@ export const Offers = styled.div `
     grid-template-columns: 1fr 2fr;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
 
     &:last-child {

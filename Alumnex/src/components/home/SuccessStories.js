@@ -21,13 +21,13 @@ const ProfessionalFuture = () => {
         </Header>
         <CardContainer>
           {cardsInfo.map((info, i) => (<Card key={i}>
+              <SVGCtn>
+                <Image src={info.image} alt={info.imageAlt} fill sizes="(max-width: 768px) 90vw, 42vw"/>
+              </SVGCtn>
               <TextCtn>
                 <MaskText phrases={new Array(info.title)} tag="h3"/>
                 <MaskText phrases={new Array(info.details)} tag="p"/>
               </TextCtn>
-              <SVGCtn>
-                <Image src={info.image} alt={info.imageAlt} fill sizes="(max-width: 768px) 90vw, 42vw"/>
-              </SVGCtn>
             </Card>))}
         </CardContainer>
         <DemoNote aria-hidden="true"/>

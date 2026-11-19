@@ -46,25 +46,30 @@ export const CardContainer = styled.div `
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
     gap: 2rem;
   }
 `;
 export const Card = styled.div `
-  height: 41.875rem;
+  min-width: 0;
+  min-height: 41.875rem;
   border-radius: 0.75rem;
   border: 1px solid var(--stroke, rgba(255, 255, 255, 0.04));
   background: #131313;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 
   @media (max-width: 768px) {
-    height: 27.5rem;
+    min-height: 27.5rem;
   }
 `;
 export const TextCtn = styled.div `
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 32.25rem;
-  margin: 3.25rem 3.25rem 2.94rem 3.25rem;
+  padding: 3.25rem;
+  padding-bottom: 2.94rem;
 
   h3 {
     font-size: 2rem;
@@ -80,7 +85,7 @@ export const TextCtn = styled.div `
   }
 
   @media (max-width: 768px) {
-    margin: 1.5rem 1.5rem 1.75rem 1.5rem;
+    padding: 1.5rem;
 
     h3 {
       font-size: 1.5rem;
@@ -97,18 +102,18 @@ export const SVGCtn = styled.div `
   position: relative;
   overflow: hidden;
   background: #101010;
-  height: 24.55rem;
+  flex: 1 0 24.55rem;
   display: grid;
   place-items: center;
   color: #c9a16b;
-  border-top: 1px solid rgba(201, 161, 107, 0.16);
+  border-bottom: 1px solid rgba(201, 161, 107, 0.16);
 
   img {
     object-fit: cover;
   }
 
   @media (max-width: 768px) {
-    height: 15.28219rem;
+    flex-basis: 15.28219rem;
     background-position: center center;
     background-size: contain;
   }
@@ -129,6 +134,12 @@ export const Stats = styled.div `
 
   @media (max-width: 768px) {
     margin: 3.75rem auto;
+  }
+
+  @media (max-width: 360px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1rem;
   }
 `;
 export const Stat = styled.div `

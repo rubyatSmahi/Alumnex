@@ -4,7 +4,7 @@ export const Wrapper = styled.section `
   margin-top: 11.25rem;
 
   @media (max-width: 768px) {
-    margint-top: 6.25rem;
+    margin-top: 6.25rem;
   }
 `;
 export const Inner = styled.div `
@@ -117,10 +117,21 @@ export const BriefNote = styled.div `
     max-width: 1440px;
   }
 
+  @media (max-width: 1024px) {
+    max-height: none;
+    padding: 4rem 3rem;
+
+    p {
+      font-size: clamp(3rem, 7vw, 4.5rem);
+      line-height: 1.1;
+    }
+  }
+
   @media (max-width: 768px) {
     padding: 2rem 1.5rem;
     p {
-      font-size: 3.75rem;
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      line-height: 1.1;
     }
   }
 `;

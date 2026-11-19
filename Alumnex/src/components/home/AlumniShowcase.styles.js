@@ -51,6 +51,8 @@ export const ImageContainer = styled.div `
 `;
 export const ParallaxImages = styled.div `
   position: relative;
+  width: 100%;
+  overflow: hidden;
   max-width: 53.7rem;
   margin: 3rem auto 0;
 
