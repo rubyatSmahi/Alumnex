@@ -1,5 +1,3 @@
-import DashboardShell from '@/components/dashboard/DashboardShell';
-
 export default function Layout({ children }) {
-  return <DashboardShell role="alumni">{children}</DashboardShell>;
+  return children;
 }

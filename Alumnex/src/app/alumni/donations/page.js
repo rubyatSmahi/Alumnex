@@ -1,15 +1,5 @@
+import AlumniDashboard from '@/components/dashboard/AlumniDashboard';
+
 export default function Page() {
-  return (
-    <main className="page-shell">
-      <section className="content-panel">
-        <p className="eyebrow">Alumnex</p>
-        <h1>Alumni Donations</h1>
-        <p className="lead">Track community support and alumni giving records.</p>
-        <div className="action-row">
-          <a href="/" className="primary-link">Back home</a>
-          <a href="/contact" className="secondary-link">Talk to the team</a>
-        </div>
-      </section>
-    </main>
-  );
+  return <AlumniDashboard initialTab="donations"  />;
 }

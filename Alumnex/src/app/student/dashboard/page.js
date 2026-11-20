@@ -1,5 +1,5 @@
-import DashboardOverview from '@/components/dashboard/DashboardOverview';
+import StudentDashboard from '@/components/dashboard/StudentDashboard';
 
 export default function Page() {
-  return <DashboardOverview role="student" />;
+  return <StudentDashboard initialTab="dashboard" />;
 }

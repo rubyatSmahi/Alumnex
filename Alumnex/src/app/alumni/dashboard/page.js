@@ -1,5 +1,5 @@
-import DashboardOverview from '@/components/dashboard/DashboardOverview';
+import AlumniDashboard from '@/components/dashboard/AlumniDashboard';
 
 export default function Page() {
-  return <DashboardOverview role="alumni" />;
+  return <AlumniDashboard initialTab="dashboard"  />;
 }
