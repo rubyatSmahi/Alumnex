@@ -1,4 +1,12 @@
 {
+  "name": "alumnex-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix Alumnex run dev",
+    "build": "npm --prefix Alumnex run build",
+    "start": "npm --prefix Alumnex run start"
+  },
   "dependencies": {
     "motion": "^14.14.0"
   }
